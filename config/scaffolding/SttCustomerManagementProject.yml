@@ -19,6 +19,10 @@ services:
   packages:
   - name: SttCustomerManagementProject
     version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
 configurationVariables:
   ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.expireTimeout
   : "1000"
