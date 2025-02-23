@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="svc_type">flow</value>
+  <value name="svc_subtype">unknown</value>
+  <value name="svc_sigtype">unknown</value>
+  <record name="svc_sig" javaclass="com.wm.util.Values">
+    <record name="sig_in" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="node_subtype">unknown</value>
+      <value name="is_public">false</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="nillable">true</value>
+      <value name="form_qualified">false</value>
+      <value name="is_global">false</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">field</value>
+          <value name="node_subtype">unknown</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+            <value name="field_usereditable">false</value>
+          </record>
+          <value name="is_public">false</value>
+          <value name="field_name">customer</value>
+          <value name="field_type">recref</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <value name="modifiable">true</value>
+          <value name="rec_ref">project.sttcustomermanagement.documenttypes:Customer</value>
+        </record>
+      </array>
+      <value name="modifiable">true</value>
+    </record>
+    <record name="sig_out" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="node_subtype">unknown</value>
+      <value name="is_public">false</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="nillable">true</value>
+      <value name="form_qualified">false</value>
+      <value name="is_global">false</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">field</value>
+          <value name="node_subtype">unknown</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+            <value name="field_usereditable">false</value>
+            <value name="id">af233d90-f1bd-11ef-846e-cbb116d70f06</value>
+          </record>
+          <value name="is_public">false</value>
+          <value name="field_name">customer</value>
+          <value name="field_type">recref</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <value name="modifiable">true</value>
+          <value name="rec_ref">project.sttcustomermanagement.documenttypes:Customer</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">field</value>
+          <value name="node_subtype">unknown</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+            <value name="field_usereditable">false</value>
+          </record>
+          <value name="is_public">false</value>
+          <value name="field_name">action</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <array name="field_options" type="value" depth="1">
+            <value>created</value>
+            <value>updated</value>
+          </array>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
+      </array>
+      <value name="modifiable">true</value>
+    </record>
+  </record>
+  <value name="description"></value>
+  <value name="stateless">yes</value>
+  <value name="caching">no</value>
+  <value name="prefetch">no</value>
+  <value name="cache_ttl">15</value>
+  <value name="prefetch_level">1</value>
+  <value name="audit_level">off</value>
+  <value name="check_internal_acls">no</value>
+  <value name="icontext_policy">$null</value>
+  <value name="system_service">no</value>
+  <value name="retry_max">0</value>
+  <value name="retry_interval">0</value>
+  <record name="node_hints" javaclass="com.wm.util.Values">
+    <value name="lastModifiedBy">stephane.tailland@ibm.com</value>
+    <value name="lastModifiedDate">1740303866173</value>
+    <value name="displayName">upsertCustomer</value>
+    <value name="description"></value>
+    <array name="appList" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="providerName">WmJDBCAdapter</value>
+        <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
+      </record>
+    </array>
+    <record name="stepNodeHints" javaclass="com.wm.util.Values">
+      <record name="/0" javaclass="com.wm.util.Values">
+        <value name="itemType">APPS</value>
+        <record name="appserviceInfo" javaclass="com.wm.util.Values">
+          <value name="appID">com.wm.adapter.wmjdbc.JDBCAdapter</value>
+          <value name="appName"></value>
+          <value name="operationName">selectCustomer</value>
+        </record>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="operationName">selectCustomer</value>
+          <value name="description"></value>
+          <value name="isCustom"></value>
+          <value name="operationType"></value>
+        </record>
+        <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
+        <value name="appType">predefined</value>
+        <Boolean name="hasAccount">true</Boolean>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <value name="name">Database</value>
+        <value name="providerName">WmJDBCAdapter</value>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">db_azuresql_dada</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
+        <Boolean name="accountReferenceResolved">true</Boolean>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+      </record>
+      <null name="/1/0"/>
+      <record name="/1/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+      </record>
+      <null name="/1/0/0/0"/>
+      <null name="/1/0/0/1"/>
+      <record name="/1/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">APPS</value>
+        <record name="appserviceInfo" javaclass="com.wm.util.Values">
+          <value name="appID">com.wm.adapter.wmjdbc.JDBCAdapter</value>
+          <value name="appName"></value>
+          <value name="operationName">insertCustomer</value>
+        </record>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="operationName">insertCustomer</value>
+          <value name="description"></value>
+          <value name="isCustom"></value>
+          <value name="operationType"></value>
+        </record>
+        <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
+        <value name="appType">predefined</value>
+        <Boolean name="hasAccount">true</Boolean>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <value name="name">Database</value>
+        <value name="providerName">WmJDBCAdapter</value>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">db_azuresql_dada</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
+        <Boolean name="accountReferenceResolved">true</Boolean>
+      </record>
+      <null name="/1/1"/>
+      <record name="/1/1/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+      </record>
+      <null name="/1/1/0/0"/>
+      <null name="/1/1/0/1"/>
+      <null name="/1/1/0/2"/>
+      <null name="/1/1/0/3"/>
+      <record name="/1/1/1" javaclass="com.wm.util.Values">
+        <value name="itemType">APPS</value>
+        <record name="appserviceInfo" javaclass="com.wm.util.Values">
+          <value name="appID">com.wm.adapter.wmjdbc.JDBCAdapter</value>
+          <value name="appName"></value>
+          <value name="operationName">updateCustomer</value>
+        </record>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="operationName">updateCustomer</value>
+          <value name="description"></value>
+          <value name="isCustom"></value>
+          <value name="operationType"></value>
+        </record>
+        <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
+        <value name="appType">predefined</value>
+        <Boolean name="hasAccount">true</Boolean>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <value name="name">Database</value>
+        <value name="providerName">WmJDBCAdapter</value>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">db_azuresql_dada</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
+        <Boolean name="accountReferenceResolved">true</Boolean>
+      </record>
+      <record name="/2" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+      </record>
+      <null name="/2/0"/>
+      <null name="/2/1"/>
+      <null name="/2/2"/>
+      <null name="/2/3"/>
+      <null name="/2/4"/>
+      <null name="/2/5"/>
+    </record>
+  </record>
+  <value name="svc_in_validator_options">none</value>
+  <value name="svc_out_validator_options">none</value>
+  <value name="auditoption">0</value>
+  <null name="auditfields_input"/>
+  <null name="auditfields_output"/>
+  <record name="auditsettings" javaclass="com.wm.util.Values">
+    <value name="document_data">0</value>
+    <value name="startExecution">false</value>
+    <value name="stopExecution">false</value>
+    <value name="onError">true</value>
+  </record>
+  <array name="allowedHTTPMethods" type="value" depth="1">
+    <value>TRACE</value>
+    <value>HEAD</value>
+    <value>DELETE</value>
+    <value>POST</value>
+    <value>GET</value>
+    <value>OPTIONS</value>
+    <value>PUT</value>
+    <value>PATCH</value>
+  </array>
+  <value name="pipeline_option">0</value>
+  <null name="originURI"/>
+  <value name="modifiable">true</value>
+  <value name="is_public">false</value>
+  <value name="is_visible">true</value>
+</Values>
