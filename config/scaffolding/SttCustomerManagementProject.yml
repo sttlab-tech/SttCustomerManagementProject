@@ -7,3 +7,58 @@ packages:
   gitUrl: https://github.com/sttlab-tech
   gitUsername: sttlab-tech
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
+services:
+- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada
+  packages:
+  - name: SttCustomerManagementProject
+    version: "1.0"
+configurationVariables:
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.user
+  : sttlab
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.serverName
+  : sttlab.database.windows.net
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.databaseName
+  : sqldb
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.trustStore
+  : ""
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.keyStore
+  : ""
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.password
+  : "{AES}xQJbA1N3SVslXYLJd7vQXHtoPSIUr5vmkgNS5mqAKjw="
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionEnabled
+  : "false"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.poolable
+  : "true"
