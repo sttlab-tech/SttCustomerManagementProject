@@ -19,14 +19,14 @@ services:
   packages:
   - name: SttCustomerManagementProject
     version: "1.0"
-- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCustomer
-  packages:
-  - name: SttCustomerManagementProject
-    version: "1.0"
 - serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
+- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCustomer
+  packages:
+  - name: SttCustomerManagementProject
+    version: "1.0"
 - serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:updateCustomer
   packages:
   - name: SttCustomerManagementProject
