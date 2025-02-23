@@ -11,7 +11,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada
+- serviceName: project.sttcustomermanagement.integrations:upsertCustomer
+  packages:
+  - name: SttCustomerManagementProject
+    version: "1.0"
+- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:selectCustomer
   packages:
   - name: SttCustomerManagementProject
     version: "1.0"
@@ -57,7 +61,7 @@ configurationVariables:
   ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionEnabled
-  : "false"
+  : "true"
   ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.poolable
