@@ -11,34 +11,14 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada_edge
-  packages:
-  - name: SttCustomerManagementProject
-    version: "1.0"
-- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCustomer
-  packages:
-  - name: SttCustomerManagementProject
-    version: "1.0"
-- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:selectCustomer
-  packages:
-  - name: SttCustomerManagementProject
-    version: "1.0"
-- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:updateCustomer
-  packages:
-  - name: SttCustomerManagementProject
-    version: "1.0"
 - serviceName: project.sttcustomermanagement.integrations:upsertCustomer
   packages:
   - name: SttCustomerManagementProject
     version: "1.0"
-- serviceName: project.sttcustomermanagement.integrations:upsertCustomerV2
+- serviceName: project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:selectCustomerByCRMId
   packages:
   - name: SttCustomerManagementProject
     version: "1.0"
-- serviceName: pub.flow:debugLog
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
 configurationVariables:
   ? artConnection.SttCustomerManagementProject.project.sttcustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada.connectionManagerSettings.expireTimeout
   : "1000"
